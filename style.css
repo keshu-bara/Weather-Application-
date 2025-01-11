@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 
@@ -19,7 +19,7 @@ body{
     width:90%;
     max-width: 470px;
     /* background:linear-gradient(90deg, rgba(255, 95, 109, 0.8), rgba(255, 195, 113, 0.8), rgba(255, 250, 101, 0.8), rgba(128, 255, 114, 0.8), rgba(126, 232, 250, 0.8), rgba(106, 130, 251, 0.8), rgba(215, 121, 217, 0.8));
-    ; */
+    ; 
     color:#fff;
     margin:40px auto 0;
     border-radius: 20px;
@@ -41,7 +41,7 @@ body{
     color:#555;
     padding:10px 25px;
     height:60px;
-    /* border-radius:30px; */
+    /* border-radius:30px; 
     flex:1;
     margin-right:16px;
     font-size:18px;
@@ -51,7 +51,7 @@ body{
     border:0;
     outline:0;
     background: rgba(0, 56, 109, 0.5);
-    /* border-radius: 50%; */
+    /* border-radius: 50%; 
     width:60px;
     height:60px;
     cursor:pointer;
@@ -117,4 +117,187 @@ body{
 
 
 
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(90deg, rgba(255, 95, 109, 0.8), rgba(255, 195, 113, 0.8), rgba(255, 250, 101, 0.8), rgba(128, 255, 114, 0.8), rgba(126, 232, 250, 0.8), rgba(106, 130, 251, 0.8), rgba(215, 121, 217, 0.8)); */
+    color: #fff;
+    margin: 40px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: rgba(235, 255, 252, 0.5);
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    /* border-radius: 30px; */
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: rgba(0, 56, 109, 0.5);
+    /* border-radius: 50%; */
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search img {
+    width: 30px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.details img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.production {
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .card {
+        padding: 35px 30px;
+    }
+
+    .weather h1 {
+        font-size: 70px;
+    }
+
+    .weather h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .humidity, .wind {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 28px;
+    }
+
+    .search input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .details {
+        padding: 0 10px;
+    }
 }
